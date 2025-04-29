@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>R23 -2nd Year DS | LMS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f4f6f7;
+      font-family: 'Arial', sans-serif;
+      padding-top: 70px;
+    }
+    .navbar {
+      background-color: #ffa726;
+    }
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #e65100;
+    }
+    .profile-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .navbar-brand-container {
+      display: flex;
+      align-items: center;
+    }
+    .container-box {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 50px auto;
+    }
+    h2, h5 {
+      color: #ffa726;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #ffe0b2;
+      color: #e65100;
+    }
+    .accordion-button {
+      font-weight: bold;
+    }
+    .footer {
+      background-color: #ffa726;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .chatbot-icon {
+      position: fixed;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #ffa726;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1050;
+      cursor: pointer;
+    }
+    .chatbot-icon img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container d-flex align-items-center">
+    <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-brand-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon">
+      <a class="navbar-brand" href="index.html">LMS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="COURSES.html">Courses</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="regulationDropdown" role="button" data-bs-toggle="dropdown">Regulation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="R20_Regulation.html">R20</a></li>
+            <li><a class="dropdown-item" href="R23_Regulation.html">R23</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="syllabusDropdown" role="button" data-bs-toggle="dropdown">Syllabus</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="R20_Syllabus.html">R20</a></li>
+            <li><a class="dropdown-item" href="R23_Syllabus.html">R23</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="NOTIFICATION.html">Notifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="PROFILE.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="MORE.html">More ....</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Chatbot Label -->
+<div style="position: fixed; top: calc(50% + 40px); right: 10px; transform: translateY(-50%); background-color: #ffffff; color: #ffa726; font-weight: bold; padding: 8px 12px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 1049;">
+  Hi! Ask TutorBot Anything!
+</div>
+
+<!-- Chatbot Icon -->
+<!-- Chatbot Icon with Redirect -->
+<a href="chatbot.html" title="Chat with us">
+  <div class="chatbot-icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Chatbot">
+  </div>
+</a>
+
+
+<!-- Content -->
+<div class="container-box">
+  <h2>DS - 2nd Year 2nd Sem</h2>
+  <p>Subjects with Detailed Notes</p>
+
+    <div class="accordion" id="aimlSubjects">
+
+		<!-- Programming for Problem Solving using C -->
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingC">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="true" aria-controls="collapseC">
+			  Optimization Techniques
+			</button>
+		  </h2>
+		  <div id="collapseC" class="accordion-collapse collapse show" aria-labelledby="headingC" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="OT-UNIT-1.pdf" download>Introduction and Classical Optimization Techniques</a></li>
+				<li><strong>Unit 2:</strong> <a href="OT-UNIT-2.pdf" download>Linear Programming</a></li>
+				<li><strong>Unit 3:</strong> <a href="OT-UNIT-3.pdf" download>Transportation Problem</a></li>
+				<li><strong>Unit 4:</strong> <a href="OT-UNIT-4.pdf" download>Non Linear Programming</a></li>
+				<li><strong>Unit 5:</strong> <a href="OT-UNIT-5.pdf" download>Dynamic Programming</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Physics -->
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingPhysics">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysics" aria-expanded="false" aria-controls="collapsePhysics">
+			  Statistical Methods For Data Science
+			</button>
+		  </h2>
+		  <div id="collapsePhysics" class="accordion-collapse collapse" aria-labelledby="headingPhysics" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="SM-UNIT-1.pdf" download>Data Visualization and Distributions</a></li>
+				<li><strong>Unit 2:</strong> <a href="SM-UNIT-2.pdf" download>Hypothesis Testing</a></li>
+				<li><strong>Unit 3:</strong> <a href="SM-UNIT-3.pdf" download>Linear Regression and Multiple Regression</a></li>
+				<li><strong>Unit 4:</strong> <a href="SM-UNIT-4.pdf" download>Time Series & Seasonal Variations </a></li>
+				<li><strong>Unit 5:</strong> <a href="SM-UNIT-5.pdf" download>Logistic Regression</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+				<!-- Workshop -->
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingWorkshop">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWorkshop" aria-expanded="true" aria-controls="collapseWorkshop">
+			 Data Engineering 
+			</button>
+		  </h2>
+		  <div id="collapseWorkshop" class="accordion-collapse collapse" aria-labelledby="headingWorkshop" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="DE-UNIT-1.pdf" download>Introduction To Data Engineering</a></li>
+				<li><strong>Unit 2:</strong> <a href="DE-UNIT-2.pdf" download>Data Engineering Life Cycle & Major Undercurrents Across the Data Engineering Life Cycle</a></li>
+				<li><strong>Unit 3:</strong> <a href="DE-UNIT-3.pdf" download>Designing Good Data Architecture & Data Generation in Source Systems</a></li>
+				<li><strong>Unit 4:</strong> <a href="DE-UNIT-4.pdf" download>Storage & Ingestion</a></li>
+				<li><strong>Unit 5:</strong> <a href="DE-UNIT-5.pdf" download>Queries,Modeling and Transformation & Serving Data For Analytics, Machine Learning and Reverse ETI</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Chemistry -->
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingChemistry">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChemistry" aria-expanded="true" aria-controls="collapseChemistry">
+			  Database Management Systems 
+			</button>
+		  </h2>
+		  <div id="collapseChemistry" class="accordion-collapse collapse" aria-labelledby="headingChemistry" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="DBMS-UNIT-1.pdf" download>Introduction & Entity Relationship Model</a></li>
+				<li><strong>Unit 2:</strong> <a href="DBMS-UNIT-2.pdf" download>Relational Model </a></li>
+				<li><strong>Unit 3:</strong> <a href="DBMS-UNIT-3.pdf" download>SQL</a></li>
+				<li><strong>Unit 4:</strong> <a href="DBMS-UNIT-4.pdf" download>Schema Refinement</a></li>
+				<li><strong>Unit 5:</strong> <a href="DBMS-UNIT-5.pdf" download>Transaction Concept</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		<!-- DLCO-->
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingMaths">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaths" aria-expanded="true" aria-controls="collapseMaths">
+				Computer Organization & Architecture
+
+			</button>
+		  </h2>
+		  <div id="collapseMaths" class="accordion-collapse collapse" aria-labelledby="headingMaths" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="CO&A-UNIT-1.pdf" download>Digital Computer And Data Representation & Boolean Algebra and Logical Gates</a></li>
+				<li><strong>Unit 2:</strong> <a href="CO&A-UNIT-2.pdf" download>Digital Logic Circuit & Synchronous Counters</a></li>
+				<li><strong>Unit 3:</strong> <a href="CO&A-UNIT-3.pdf" download>Computer Arithmetic & Basic Computer Organization and Design</a></li>
+				<li><strong>Unit 4:</strong> <a href="CO&A-UNIT-4.pdf" download>MicroProgramming Control & Central Processing Unit & Program Control</a></li>
+				<li><strong>Unit 5:</strong> <a href="CO&A-UNIT-5.pdf" download>Memory Organization & Input-Output Organization</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		   </div
+		</div>
+			 
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingComputerProgramming">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComputerProgramming" aria-expanded="true" aria-controls="collapseComputerProgramming">
+			  Environmental Studies
+			</button>
+		  </h2>
+		  <div id="collapseComputerProgramming" class="accordion-collapse collapse" aria-labelledby="headingComputerProgramming" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="ES-UNIT-1.pdf" download>MultiDisciplinary Nature Of Environmental Studies & Natural Resourses & Mineral Resourses</a></li>
+				<li><strong>Unit 2:</strong> <a href="ES-UNIT-2.pdf" download>Ecosystems & Biodiversity and its Conservation</a></li>
+				<li><strong>Unit 3:</strong> <a href="ES-UNIT-3.pdf" download>Environmental pollution & Solid Waste Management</a></li>
+				<li><strong>Unit 4:</strong> <a href="ES-UNIT-4.pdf" download>Social issues and Environment & Environmental Ethics</a></li>
+				<li><strong>Unit 5:</strong> <a href="ES-UNIT-5.pdf" download>Human Population and The Environment & Field Work</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Digital Electronics 
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingDigitalElectronics">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDigitalElectronics" aria-expanded="true" aria-controls="collapseDigitalElectronics">
+			  Digital Electronics
+			</button>
+		  </h2>
+		  <div id="collapseDigitalElectronics" class="accordion-collapse collapse" aria-labelledby="headingDigitalElectronics" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="pdfs/digital_electronics_unit1.pdf" download>Download Unit 1 PDF</a></li>
+				<li><strong>Unit 2:</strong> <a href="pdfs/digital_electronics_unit2.pdf" download>Download Unit 2 PDF</a></li>
+				<li><strong>Unit 3:</strong> <a href="pdfs/digital_electronics_unit3.pdf" download>Download Unit 3 PDF</a></li>
+				<li><strong>Unit 4:</strong> <a href="pdfs/digital_electronics_unit4.pdf" download>Download Unit 4 PDF</a></li>
+				<li><strong>Unit 5:</strong> <a href="pdfs/digital_electronics_unit5.pdf" download>Download Unit 5 PDF</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>-->
+
+		<!-- Electrical Circuits 
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingElectricalCircuits">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseElectricalCircuits" aria-expanded="true" aria-controls="collapseElectricalCircuits">
+			  Electrical Circuits
+			</button>
+		  </h2>
+		  <div id="collapseElectricalCircuits" class="accordion-collapse collapse" aria-labelledby="headingElectricalCircuits" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="pdfs/electrical_circuits_unit1.pdf" download>Download Unit 1 PDF</a></li>
+				<li><strong>Unit 2:</strong> <a href="pdfs/electrical_circuits_unit2.pdf" download>Download Unit 2 PDF</a></li>
+				<li><strong>Unit 3:</strong> <a href="pdfs/electrical_circuits_unit3.pdf" download>Download Unit 3 PDF</a></li>
+				<li><strong>Unit 4:</strong> <a href="pdfs/electrical_circuits_unit4.pdf" download>Download Unit 4 PDF</a></li>
+				<li><strong>Unit 5:</strong> <a href="pdfs/electrical_circuits_unit5.pdf" download>Download Unit 5 PDF</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>-->
+
+		<!-- Communication Systems 
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingCommunicationSystems">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommunicationSystems" aria-expanded="true" aria-controls="collapseCommunicationSystems">
+			  Communication Systems
+			</button>
+		  </h2>
+		  <div id="collapseCommunicationSystems" class="accordion-collapse collapse" aria-labelledby="headingCommunicationSystems" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="pdfs/communication_systems_unit1.pdf" download>Download Unit 1 PDF</a></li>
+				<li><strong>Unit 2:</strong> <a href="pdfs/communication_systems_unit2.pdf" download>Download Unit 2 PDF</a></li>
+				<li><strong>Unit 3:</strong> <a href="pdfs/communication_systems_unit3.pdf" download>Download Unit 3 PDF</a></li>
+				<li><strong>Unit 4:</strong> <a href="pdfs/communication_systems_unit4.pdf" download>Download Unit 4 PDF</a></li>
+				<li><strong>Unit 5:</strong> <a href="pdfs/communication_systems_unit5.pdf" download>Download Unit 5 PDF</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>-->
+
+		<!-- Signal Processing 
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="headingSignalProcessing">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSignalProcessing" aria-expanded="true" aria-controls="collapseSignalProcessing">
+			  Signal Processing
+			</button>
+		  </h2>
+		  <div id="collapseSignalProcessing" class="accordion-collapse collapse" aria-labelledby="headingSignalProcessing" data-bs-parent="#aimlSubjects">
+			<div class="accordion-body">
+			  <ul>
+				<li><strong>Unit 1:</strong> <a href="pdfs/signal_processing_unit1.pdf" download>Download Unit 1 PDF</a></li>
+				<li><strong>Unit 2:</strong> <a href="pdfs/signal_processing_unit2.pdf" download>Download Unit 2 PDF</a></li>
+				<li><strong>Unit 3:</strong> <a href="pdfs/signal_processing_unit3.pdf" download>Download Unit 3 PDF</a></li>
+				<li><strong>Unit 4:</strong> <a href="pdfs/signal_processing_unit4.pdf" download>Download Unit 4 PDF</a></li>
+				<li><strong>Unit 5:</strong> <a href="pdfs/signal_processing_unit5.pdf" download>Download Unit 5 PDF</a></li>
+			  </ul>
+			  <hr>
+			  <ul>
+				<li><a href="#">Previous Papers (PDF)</a></li>
+				<li><a href="#">Important Questions Unit-wise (PDF)</a></li>
+				<li><a href="#">Reference Books</a></li>
+				<li><a href="#">Textbooks</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>-->
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2025 Learning Management System | All Rights Reserved</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
